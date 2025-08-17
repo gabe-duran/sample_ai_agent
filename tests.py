@@ -1,18 +1,7 @@
-from functions.get_files_info import get_files_info
-
+from functions.run_python_file import run_python_file
+from config import system_prompt
 def main():
-    print("Result for current directory:")
-    print(get_files_info("calculator", "."))
-
-    print("Result for 'pkg' directory:")
-    print(get_files_info("calculator", "pkg"))
-
-    print("Result for '/bin' directory:")
-    print(get_files_info("calculator", "/bin"))
-
-    print("Result for '../' directory:")
-    print(get_files_info("calculator", "../"))
-
+    print(system_prompt)
 
 
 if __name__ == "__main__":
