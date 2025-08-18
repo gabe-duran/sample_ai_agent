@@ -25,7 +25,7 @@ def get_files_info(working_directory, directory="."):
     return "\n".join(lines)
 
 def main():
-    print(get_files_info("calculator","."))
+    print(get_files_info("calculator","calculator"))
 
 
 schema_get_files_info = types.FunctionDeclaration(
